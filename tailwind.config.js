@@ -4,8 +4,8 @@ module.exports = {
   theme: {
 
     backgroundImage: {
-      'queen': "url('images/img4.jpg')",
-      'queen1': "url('images/img2.jpg')",
+      'queen': "url('./images/img4.jpg')",
+      'queen1': "url('./images/img2.jpg')",
       
     },
     fontFamily: {
