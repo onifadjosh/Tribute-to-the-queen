@@ -9,20 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54e86b48e4.js" crossorigin="anonymous"></script>
     <title>TRIBUTE TO THE LATE QUEEN</title>
     <link href="dist\output.css" rel="stylesheet">
 </head>
 <body>
     <header class=" bg-dark-noise">
         <!-- navbar for the hero section -->
-        <nav class="flex justify-between md:px-14    shadow-gray-600  shadow-sm  py-2 mb-4 ">
+        <nav class="flex justify-between md:px-16    shadow-gray-600  shadow-md  py-2 mb-4 ">
             <!-- nav-logo -->
             <div class="logo">
                 <img src="dist/images/logo.jpg" alt="logo">
             </div>
 
             <!-- nav link, items and primary buttons -->
-            <div class="flex basis-1/2 justify-around items-center">
+            <div class="flex basis-1/2 justify-around items-center font-body">
                 <a class="text-primcol hover:opacity-50 cursor-pointer text-xs md:text-sm" href="#">Home</a>
                 <a class="text-primcol hover:opacity-50 cursor-pointer text-xs md:text-sm" href="#">Biography</a>                                                 
                 <a class="text-primcol hover:opacity-50 cursor-pointer text-xs md:text-sm" href="#">Timeline</a>
@@ -32,27 +33,30 @@
             </div>
         </nav>
 
-        <div class="flex justify-between text-primcol items-center md:px-14"><!--header content container for hero image and the content itself-->
+        <div class="flex justify-between text-primcol items-center md:px-16"><!--header content container for hero image and the content itself-->
             <div class="flex flex-col items-center">
-                <div class="flex flex-col">
+                <div class="flex flex-col ">
                     <div class="flex justify-center">
                         <img src="dist/images/Mask.png" class="py-8 max-w-[20%] w-full" alt="" srcset="">
                     </div>
     
-                    <h1 class="font-headings text-5xl "><!--content head-->
-                        QUEEN ELIZABETH II
-                    </h1>
-    
-                    <p class="text-sm">
-                        "I have in sincerity pledged myself to your service, as so many of you <br>
-                        are pledged to mine. Throughout all my life and with all my heart I <br>
-                        shall strive to be worthy of your trust."
-                    </p>
+                    <div class="flex flex-col items-start py-3">
+
+                        <h1 class="font-headings font-medium text-3xl lg:text-5xl pb-4 " data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out"><!--content head-->
+                            QUEEN ELIZABETH II
+                        </h1>
+        
+                        <p class="text-sm font-body italic text-white opacity-50 leading-snug tracking-[0.05em]" data-aos="slide-right" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                            "I have in sincerity pledged myself to your service, as so many of you <br>
+                            are pledged to mine. Throughout all my life and with all my heart I <br>
+                            shall strive to be worthy of your trust."
+                        </p>
+                    </div>
                 </div>
 
-                <div class="ml-5 flex flex-col justify-end items-end">
-                    <p>- Queen Elizabeth Alexandra Mary Windsor</p>
-                    <p>21 April 1926 - 8 September 2022</p>
+                <div class="ml-5 flex flex-col justify-end items-end font-body text-sm" data-aos="slide-right" data-aos-duration="3000" data-aos-easing="ease-in-out">
+                    <p class="text-sm font-body ">- Queen Elizabeth Alexandra Mary Windsor</p>
+                    <p class="text-xs font-body italic text-white opacity-50">21 April 1926 - 8 September 2022</p>
                 </div>
 
                 
@@ -62,19 +66,19 @@
         </div>
     </header>
 
-    <section class="md:px-14 py-12">
+    <section class="md:px-16 py-12">
         <div>
-            <h1 class="font-bold"><!--first section headhing, the queen's biography heading-->
+            <h1 class="font-headings text-[#1B1C1E] font-bold text-lg lg:text-3xl py-2"><!--first section headhing, the queen's biography heading-->
                 BIOGRAPHY
             </h1>
-            <p>A short account of Queen Elizabeth II’s Life</p>
+            <p class="font-body text-xs text-[#1B1C1E] lg:text-sm pb-3">A short account of Queen Elizabeth II’s Life</p>
         </div>
 
-        <div class="grid grid-cols-3  gap-6" ><!--the section content wrapper, the biography content-->
-            <div><img src="dist/images/img1.jpg" alt="" class="w-full" srcset=""></div>
-            <div class="bg-queen1 bg-no-repeat bg-cover bg-center"></div>
+        <div class="md:grid grid-cols-3  gap-6" ><!--the section content wrapper, the biography content-->
+            <div data-aos="slide-right" data-aos-duration="2000"><img src="dist/images/img1.jpg" alt="" class="" srcset=""></div>
+            <div data-aos="zoom-in" data-aos-duration="2000" class="bg-queen1 bg-no-repeat bg-cover bg-center"></div>
         
-            <p>
+            <p class="text-[#1B1C1E] opacity-70 text-sm tracking-widest leading-loose">
                 Elizabeth Alexandra Mary Windsor was born in <br>
                 Mayfair, London, as the first child of the Duke & <br>
                 Duchess of York (later King George VI and Queen <br>
@@ -86,50 +90,54 @@
                 in the Auxiliary Territorial Service.
             </p>
             
-            <div><img src="dist/images/img3.jpg" class="w-full" alt=""></div>
+            <div data-aos="slide-right" data-aos-duration="2000"><img src="dist/images/img3.jpg" class="" alt=""></div>
             
-            <p>
-                In November 1947, she married Philip Mountbatten, a <br>
-                former prince of Greece and Denmark, and their <br>
-                marriage lasted 73 years until his death in April 2021. <br>
-                They had four children: Charles III; Anne, Princess <br>
-                Royal; Prince Andrew, Duke of York; and Prince <br>
-                Edward, Earl of Wessex. Elizabeth II was Queen of <br>
-                the United Kingdom from 6 February 1952 until her <br>
-                death in 2022. Her reign of 70 years and 214 days <br>
-                was the longest of any British monarch and the <br>
-                second-longest recorded of any monarch of a <br>
-                sovereign country. At the time of her death, <br>
-                Elizabeth was also Queen of 14 other Commonwealth <br>
-                realms in addition to the United Kingdom.
-            </p>
+            <div>
+                <p class=" opacity-70 text-sm tracking-widest leading-relaxed">
+                    In November 1947, she married Philip Mountbatten, a <br>
+                    former prince of Greece and Denmark, and their <br>
+                    marriage lasted 73 years until his death in April 2021. <br>
+                    They had four children: Charles III; Anne, Princess <br>
+                    Royal; Prince Andrew, Duke of York; and Prince <br>
+                    Edward, Earl of Wessex. Elizabeth II was Queen of <br>
+                    the United Kingdom from 6 February 1952 until her <br>
+                    death in 2022. Her reign of 70 years and 214 days <br>
+                    was the longest of any British monarch and the <br>
+                    second-longest recorded of any monarch of a <br>
+                    sovereign country. At the time of her death, <br>
+                    Elizabeth was also Queen of 14 other Commonwealth <br>
+                    realms in addition to the United Kingdom.
+                </p>
+
+                <a href="#" class="cursor-pointer text-sm font-bold text-[#1B1C1E]">Read More<i class="fa-solid fa-right-long pl-1 fa-shake"></i></a>
+            </div>
         
             
         
-            <div class="bg-queen bg-no-repeat bg-cover bg-center"></div>
+            <div data-aos="zoom-in" data-aos-duration="3000" class="bg-queen bg-no-repeat bg-cover bg-center"></div>
         </div>
 
         
     </section>
     
-    <section class="md:px-14">
+    <section class="md:px-16">
         <div class="flex items-center justify-between py-4">
             <div>
-                <h1 class="font-bold"><!--first section headhing, the queen's biography heading-->
+                <h1 class="font-headings font-semibold text-[#1B1C1E] text-lg lg:text-3xl py-2"><!--first section headhing, the queen's biography heading-->
                     TIMELINE
                 </h1>
-                <p>Key dates in the life of the Queen, from her birth in April 1926 to her death in September 2022</p>
+                <p class="font-body text-xs text-[#1B1C1E] lg:text-sm pb-3 opacity-70">Key dates in the life of the Queen, from her birth in April 1926 to her death in September 2022</p>
             </div>
 
-            <a href="#">See All</a>
+            <a href="#" class="cursor-pointer text-sm font-bold text-[#1B1C1E]">Read More<i class="fa-solid fa-right-long pl-1 fa-shake"></i></a>
         </div>
 
-        <div>
-            <div>
-                <img src="dist/images/box1.jpg" alt="" srcset="">
-                <div>
-                    <h1>1926</h1>
-                    <p>
+        <div class="flex pb-16 justify-between">
+            <div class="flex flex-col px-2 border-x-2">
+                <img src="dist/images/box1.jpg" class="pb-6  "  alt="" srcset=""  data-aos="fade-up-left" data-aos-duration="3000">
+                <div class="flex justify-between">
+                    <h1 class="font-bold font-headings text-lg">1926</h1>
+                    <p class="font-body text-sm text-[#1B1C1E] opacity-70 lg:text-sm tracking-widest leading-relaxed">
                         On the 21st of April, 1926, Princess <br>
                         Elizabeth Alexandra Mary Windsor is <br>
                         born at 2.40am at 17 Bruton Street, <br>
@@ -144,14 +152,116 @@
                 </div>
             </div>
 
-            <div>
-                <img src="dist/images/box2.jpg" alt="" srcset="">
-                <h1>
-                    
-                </h1>
+            <div class="flex flex-col px-2 border-x-2 ">
+                <img src="dist/images/box2.jpg" class="max-w-[100%] pb-6" alt="" srcset="" data-aos="fade-up-left" data-aos-duration="3000">
+               <div class="flex justify-between">
+                   <h1 class="font-bold font-headings text-lg">1930s</h1>
+                   <p class="font-body text-sm text-[#1B1C1E] opacity-70 lg:text-sm tracking-widest leading-relaxed">
+                    In August 1930, Elizabeth’s sister, <br>
+                    Princess Margaret Rose, is born. On <br>
+                    the 20th of January 1936, George V <br>
+                    dies. Edward VIII becomes king.  On <br>
+                    the 10th of December 1936, Edward <br>
+                    VIII abdicates so that he can marry <br>
+                    the American divorcee Wallis<br>
+                    Simpson.<br>
+                    In 1937, Elizabeth becomes a Girl <br>
+                    Guide at the age of 11.
+                   </p>
+               </div>
+            </div>
+
+            <div class="flex flex-col px-2 border-x-2 ">
+                <img src="dist/images/box3.jpg" class="max-w-[100%] pb-6" alt="" srcset="" data-aos="fade-up-left" data-aos-duration="3000">
+
+                <div class="flex justify-between">
+                    <h1 class="font-bold font-headings text-lg">
+                        1940s
+                    </h1>
+
+                    <p class="font-body text-sm text-[#1B1C1E] opacity-70 lg:text-sm tracking-widest leading-relaxed">
+                        On the 13th of October, 1940, <br>
+                        Elizabeth makes her first broadcast <br>
+                        to the nation. On the 21st of April <br>
+                        1942, on her 16th birthday, Elizabeth <br>
+                        carries out her first public <br>
+                        engagement when she inspects the <br>
+                        Grenadier Guards, of which she had <br>
+                        been appointed colonel-in-chief. In <br>
+                        1944, she receives her first corgi, <br>
+                        Susan, as an 18th birthday present.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <footer class="bg-dark-noise text-primcol  ">
+        <div class="flex items-center justify-between md:px-14 py-4">
+            <div>
+                <h1 class="font-headings font-normal text-lg lg:text-3xl py-2"><!--first section headhing, the queen's biography heading-->
+                    TRIBUTES
+                </h1>
+                <p class="font-body italic opacity-70 text-xs">World leaders pay tribute to Queen Elizabeth II</p>
+            </div>
+
+            <a href="#" class="cursor-pointer text-sm font-bold">See All<i class="fa-solid fa-right-long pl-1 fa-shake"></i></a>
+        </div>
+
+        <div class="pb-16 md:px-14 flex justify-between ">
+            <div class="">
+                <div class="flex gap-3">
+                    <img src="dist/images/trib1.jpg" alt=""  srcset="">
+                    <p class="font-body text-sm opacity-70 leading-relaxed tracking-wide">
+                        The story of modern Nigeria will never <br>
+                        be complete without a chapter on Queen <br>
+                        Elizabeth ll, a towering global personality <br>
+                        and an outstanding leader. She dedicated <br>
+                        her life to making her nation, the <br>
+                        Commonwealth and the entire world a <br>
+                        better place.”
+                    </p>
+                </div>
+                
+                <h1 class="py-2 font-headings font-normal">
+                    MUHAMMADU BUHARI
+                </h1>
+
+                <p class="font-body italic opacity-70 text-xs">President of Nigeria</p>
+            </div>
+
+
+            <div>
+                <div class="flex gap-3">
+                    <img src="dist/images/trib2.jpg" alt="" srcset="">
+
+                    <p class="font-body text-sm opacity-70 leading-relaxed tracking-wide">
+                        “Her Majesty Queen Elizabeth II <br>
+                        embodied the British nation’s continuity <br>
+                        and unity for over 70 years. I remember <br>
+                        her as a friend of France, a kind-hearted <br>
+                        queen who has left a lasting impression <br>
+                        on her country and her century.”
+                    </p>
+                </div>
+
+                <h1 class="py-2 font-headings font-normal">
+                    EMMANUEL MACRON
+                </h1>
+
+                <p class="font-body italic opacity-70 text-xs">President of France</p>
+            </div>
+        </div>
+
+        <div class="border-t  border-gray-400 flex flex-col justify-center items-center py-4">
+            <img src="dist/images/logo.jpg" alt="" srcset="">
+            <h1 class="font-bold font-headings text-lg">Queen Elizabeth alexandra mary windsor</h1>
+            <p class="font-body opacity-70 text-sm italic">Forever in our hearts🕊️❤️</p>
+        </div>
+
+        <p class="px-14 font-body text-sm italic">coded with love: codesbypampam⚡⚡</p>
+    </footer>
 
 
 

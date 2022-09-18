@@ -20,7 +20,7 @@ module.exports = {
 
       gridTemplateColumns: {
         
-        '3': '1fr  1fr 1fr',
+        '3': '1fr  2fr 2fr',
       },
 
       gridTemplateRows: {
