@@ -8,10 +8,18 @@ module.exports = {
       'queen1': "url('./images/img2.jpg')",
       
     },
+
+    // screens: {
+    //   'lp': '420px',
+    //   // => @media (min-width: 425px) { ... }
+
+      
+    // },
     fontFamily: {
       'headings': ['"Space Grotesk"'],
       'body': ['"Source Sans Pro"'],
     },
+    
     extend: {
       colors: {
         'dark-noise': '#1F2022',

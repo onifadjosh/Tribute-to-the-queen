@@ -11,19 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e86b48e4.js" crossorigin="anonymous"></script>
     <title>TRIBUTE TO THE LATE QUEEN</title>
+    <link rel="stylesheet" href="src/input.css">
     <link href="dist\output.css" rel="stylesheet">
 </head>
 <body>
     <header class=" bg-dark-noise">
         <!-- navbar for the hero section -->
-        <nav class="flex justify-between md:px-16    shadow-gray-600  shadow-md  py-2 mb-4 ">
+        <nav class="flex justify-between md:px-16 items-center px-4 shadow-gray-600  shadow-md  py-2 mb-4 ">
             <!-- nav-logo -->
             <div class="logo">
                 <img src="dist/images/logo.jpg" alt="logo">
             </div>
 
             <!-- nav link, items and primary buttons -->
-            <div class="flex basis-1/2 justify-around items-center font-body">
+            <div class="nav-menu flex lg:basis-1/2 md:basis-3/4 justify-around items-center font-body">
                 <a class="text-primcol hover:opacity-50 cursor-pointer text-xs md:text-sm" href="#">Home</a>
                 <a class="text-primcol hover:opacity-50 cursor-pointer text-xs md:text-sm" href="#">Biography</a>                                                 
                 <a class="text-primcol hover:opacity-50 cursor-pointer text-xs md:text-sm" href="#">Timeline</a>
@@ -31,14 +32,23 @@
                 <a class="text-primcol hover:opacity-50 cursor-pointer text-xs md:text-sm" href="#">Tributes</a>
                 <a href="#" class="text-primcol hover:opacity-50 border border-primcol px-2 py-2 cursor-pointer text-xs md:text-sm">Write Tributes</a>
             </div>
+
+            <!-- header hambuger button.... design in input css -->
+            <div class="hamburger md:hidden ">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
 
         <div class="flex justify-between text-primcol items-center md:px-16"><!--header content container for hero image and the content itself-->
-            <div class="flex flex-col items-center">
-                <div class="flex flex-col ">
-                    <div class="flex justify-center">
-                        <img src="dist/images/Mask.png" class="py-8 max-w-[20%] w-full" alt="" srcset="">
+            <div class="flex flex-col  px-4">
+                <div class="flex flex-col  items-center ">
+                    <div class="flex  justify-center">
+                        <img src="dist/images/Mask.png" class="py-8 max-w-[30%] w-full" alt="" srcset="">
                     </div>
+
+                    <img src="dist/images/headerimg.png"  class="max-w-[43%] md:hidden " alt="" srcset="">
     
                     <div class="flex flex-col items-start py-3">
 
@@ -54,7 +64,7 @@
                     </div>
                 </div>
 
-                <div class="ml-5 flex flex-col justify-end items-end font-body text-sm" data-aos="slide-right" data-aos-duration="3000" data-aos-easing="ease-in-out">
+                <div class="ml-5 flex flex-col justify-end items-end font-body text-sm pb-5" data-aos="" data-aos-duration="2000" data-aos-easing="ease-in-out">
                     <p class="text-sm font-body ">- Queen Elizabeth Alexandra Mary Windsor</p>
                     <p class="text-xs font-body italic text-white opacity-50">21 April 1926 - 8 September 2022</p>
                 </div>
@@ -62,11 +72,11 @@
                 
             </div>
 
-            <img src="dist/images/headerimg.png" class="max-w-[43%]" alt="" srcset="">
+            <img src="dist/images/headerimg.png" class="max-w-[43%] hidden md:block" alt="" srcset="">
         </div>
     </header>
 
-    <section class="md:px-16 py-12">
+    <section class="md:px-16 py-12 px-4">
         <div>
             <h1 class="font-headings text-[#1B1C1E] font-bold text-lg lg:text-3xl py-2"><!--first section headhing, the queen's biography heading-->
                 BIOGRAPHY
@@ -74,11 +84,11 @@
             <p class="font-body text-xs text-[#1B1C1E] lg:text-sm pb-3">A short account of Queen Elizabeth II’s Life</p>
         </div>
 
-        <div class="md:grid grid-cols-3  gap-6" ><!--the section content wrapper, the biography content-->
+        <div class="grid lg:grid-cols-3 md:grid-cols-2  gap-2 md:gap-6 " ><!--the section content wrapper, the biography content-->
             <div data-aos="slide-right" data-aos-duration="2000"><img src="dist/images/img1.jpg" alt="" class="" srcset=""></div>
             <div data-aos="zoom-in" data-aos-duration="2000" class="bg-queen1 bg-no-repeat bg-cover bg-center"></div>
         
-            <p class="text-[#1B1C1E] opacity-70 text-sm tracking-widest leading-loose">
+            <p class="text-[#1B1C1E] opacity-70 md:text-sm text-xs tracking-widest leading-loose">
                 Elizabeth Alexandra Mary Windsor was born in <br>
                 Mayfair, London, as the first child of the Duke & <br>
                 Duchess of York (later King George VI and Queen <br>
@@ -93,7 +103,7 @@
             <div data-aos="slide-right" data-aos-duration="2000"><img src="dist/images/img3.jpg" class="" alt=""></div>
             
             <div>
-                <p class=" opacity-70 text-sm tracking-widest leading-relaxed">
+                <p class=" opacity-70 md:text-sm text-xs tracking-widest leading-relaxed">
                     In November 1947, she married Philip Mountbatten, a <br>
                     former prince of Greece and Denmark, and their <br>
                     marriage lasted 73 years until his death in April 2021. <br>
@@ -120,8 +130,8 @@
         
     </section>
     
-    <section class="md:px-16">
-        <div class="flex items-center justify-between py-4">
+    <section class="md:px-16 px-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between py-4">
             <div>
                 <h1 class="font-headings font-semibold text-[#1B1C1E] text-lg lg:text-3xl py-2"><!--first section headhing, the queen's biography heading-->
                     TIMELINE
@@ -132,12 +142,12 @@
             <a href="#" class="cursor-pointer text-sm font-bold text-[#1B1C1E]">Read More<i class="fa-solid fa-right-long pl-1 fa-shake"></i></a>
         </div>
 
-        <div class="flex pb-16 justify-between">
+        <div class="flex flex-col lg:flex-row gap-5 pb-16 justify-between">
             <div class="flex flex-col px-2 border-x-2">
-                <img src="dist/images/box1.jpg" class="pb-6  "  alt="" srcset=""  data-aos="fade-up-left" data-aos-duration="3000">
-                <div class="flex justify-between">
+                <img src="dist/images/box1.jpg" class="pb-6  "  alt="" srcset=""  data-aos="flip-up" data-aos-duration="3000">
+                <div class="flex justify-between  flex-col md:flex-row ">
                     <h1 class="font-bold font-headings text-lg">1926</h1>
-                    <p class="font-body text-sm text-[#1B1C1E] opacity-70 lg:text-sm tracking-widest leading-relaxed">
+                    <p class="font-body text-xs text-[#1B1C1E] opacity-70 md:text-sm tracking-widest leading-relaxed">
                         On the 21st of April, 1926, Princess <br>
                         Elizabeth Alexandra Mary Windsor is <br>
                         born at 2.40am at 17 Bruton Street, <br>
@@ -153,10 +163,10 @@
             </div>
 
             <div class="flex flex-col px-2 border-x-2 ">
-                <img src="dist/images/box2.jpg" class="max-w-[100%] pb-6" alt="" srcset="" data-aos="fade-up-left" data-aos-duration="3000">
-               <div class="flex justify-between">
+                <img src="dist/images/box2.jpg" class="max-w-[100%] pb-6" alt="" srcset="" data-aos="flip-down" data-aos-duration="3000">
+               <div class="flex justify-between flex-col md:flex-row ">
                    <h1 class="font-bold font-headings text-lg">1930s</h1>
-                   <p class="font-body text-sm text-[#1B1C1E] opacity-70 lg:text-sm tracking-widest leading-relaxed">
+                   <p class="font-body text-xs text-[#1B1C1E] opacity-70 md:text-sm tracking-widest leading-relaxed">
                     In August 1930, Elizabeth’s sister, <br>
                     Princess Margaret Rose, is born. On <br>
                     the 20th of January 1936, George V <br>
@@ -172,14 +182,14 @@
             </div>
 
             <div class="flex flex-col px-2 border-x-2 ">
-                <img src="dist/images/box3.jpg" class="max-w-[100%] pb-6" alt="" srcset="" data-aos="fade-up-left" data-aos-duration="3000">
+                <img src="dist/images/box3.jpg" class="max-w-[100%] pb-6" alt="" srcset="" data-aos="flip-right" data-aos-duration="3000">
 
-                <div class="flex justify-between">
+                <div class="flex justify-between flex-col md:flex-row ">
                     <h1 class="font-bold font-headings text-lg">
                         1940s
                     </h1>
 
-                    <p class="font-body text-sm text-[#1B1C1E] opacity-70 lg:text-sm tracking-widest leading-relaxed">
+                    <p class="font-body text-xs text-[#1B1C1E] opacity-70 md:text-sm tracking-widest leading-relaxed">
                         On the 13th of October, 1940, <br>
                         Elizabeth makes her first broadcast <br>
                         to the nation. On the 21st of April <br>
@@ -198,7 +208,7 @@
 
 
     <footer class="bg-dark-noise text-primcol  ">
-        <div class="flex items-center justify-between md:px-14 py-4">
+        <div class="flex flex-col md:flex-row px-4 md:items-center justify-between md:px-14 py-4">
             <div>
                 <h1 class="font-headings font-normal text-lg lg:text-3xl py-2"><!--first section headhing, the queen's biography heading-->
                     TRIBUTES
@@ -209,9 +219,9 @@
             <a href="#" class="cursor-pointer text-sm font-bold">See All<i class="fa-solid fa-right-long pl-1 fa-shake"></i></a>
         </div>
 
-        <div class="pb-16 md:px-14 flex justify-between ">
-            <div class="">
-                <div class="flex gap-3">
+        <div class="md:pb-16 px-4 md:px-14 flex flex-col gap-4 md:flex-row justify-between ">
+            <div class="pb-5">
+                <div class="flex flex-col lg:flex-row gap-3">
                     <img src="dist/images/trib1.jpg" alt=""  srcset="">
                     <p class="font-body text-sm opacity-70 leading-relaxed tracking-wide">
                         The story of modern Nigeria will never <br>
@@ -232,8 +242,8 @@
             </div>
 
 
-            <div>
-                <div class="flex gap-3">
+            <div class="pb-5">
+                <div class="flex flex-col lg:flex-row gap-3">
                     <img src="dist/images/trib2.jpg" alt="" srcset="">
 
                     <p class="font-body text-sm opacity-70 leading-relaxed tracking-wide">
@@ -256,20 +266,22 @@
 
         <div class="border-t  border-gray-400 flex flex-col justify-center items-center py-4">
             <img src="dist/images/logo.jpg" alt="" srcset="">
-            <h1 class="font-bold font-headings text-lg">Queen Elizabeth alexandra mary windsor</h1>
+            <h1 class="font-bold font-headings text-sm md:text-lg">Queen Elizabeth alexandra mary windsor</h1>
             <p class="font-body opacity-70 text-sm italic">Forever in our hearts🕊️❤️</p>
         </div>
 
-        <p class="px-14 font-body text-sm italic">coded with love: codesbypampam⚡⚡</p>
+        <p class="md:px-14 px-4 font-body text-xs md:text-sm italic">coded with love: codesbypampam⚡⚡</p>
     </footer>
 
 
 
 
-
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>   
 </body>
+<script src="src/scripts.js"></script>
+
 </html>
